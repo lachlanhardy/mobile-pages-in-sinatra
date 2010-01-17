@@ -1,0 +1,10 @@
+!!! Strict
+%html{:lang => "en-au"}
+  %head
+    %meta{:"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"}
+    %title Mobile Pages in Sinatra demo
+  %body
+    = partial :blurb
+    %h2 Layout (mobile)
+    %p This is the layout.mobile.haml file, you can use it to serve specific CSS, JS and wrapping HTML targeted at either Android or iPhone
+    = yield
